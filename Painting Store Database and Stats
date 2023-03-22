@@ -1,0 +1,25 @@
+--Create a painting store database
+CREATE TABLE paintings (id integer primary key, name text, painter text, price integer, year integer);
+INSERT into paintings VALUES
+(1, "Starry Night", "Van Gogh", 10, 1800); 
+INSERT into paintings VALUES (2, "Un Mundo", "Gomez", 10, 1900);
+INSERT into paintings VALUES (3, "Lilies", "Claude Monet", 10, 1830);
+INSERT into paintings VALUES (4, "Woman with a Hat", "Picasso", 10, 1940);
+INSERT into paintings VALUES (5, "Green Lake", "Sarah E.J.", 8, 2001);
+INSERT into paintings VALUES (6, "Ballerina", "Sarah E.J.", 6, 2015);
+INSERT into paintings VALUES (7, "La Guernica", "Picasso", 10, 1956);
+INSERT into paintings VALUES (8, "The Scream", "Munsch", 9, 1924);
+INSERT into paintings VALUES (9, "French Revolution", "David", 10, 1948);
+INSERT into paintings VALUES (10, "Big Face", "Mohamad Saleh", 9, 2017);
+INSERT into paintings VALUES (11, "Mona Lisa", "Leonardo da Vinci", 8, 1911);
+INSERT into paintings VALUES (12, "Church", "Van Gogh", 9, 1961);
+INSERT into paintings VALUES (13, "Joker", "Batman", 4, 1921);
+INSERT into paintings VALUES (14, "Naked Ladies", "Dead Painter", 5, 1866);
+INSERT into paintings VALUES (15, "Fruit Bowl", "Aunt's friend", 3, 1981);
+
+--display the database ordered by price.
+SELECT * FROM paintings ORDER BY price;
+
+--what is the sum of all prices of paintings?
+SELECT SUM(price) FROM paintings
+
